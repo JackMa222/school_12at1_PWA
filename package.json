@@ -19,5 +19,14 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackMa222/school_12at1_PWA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JackMa222/school_12at1_PWA/issues"
+  },
+  "homepage": "https://github.com/JackMa222/school_12at1_PWA#readme"
 }
