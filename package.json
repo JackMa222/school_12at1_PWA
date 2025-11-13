@@ -14,13 +14,14 @@
   "dependencies": {
     "body-parser": "^1.20.3",
     "express": "^4.21.1",
-    "sqlite3": "^5.1.7",
-    "nodemon": "3.1.11"
+    "sqlite3": "^5.1.7"
   },
   "engines": {
     "node": ">=18.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JackMa222/school_12at1_PWA.git"
