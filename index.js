@@ -4,7 +4,8 @@ const app = express();
 
 // Introduce sqlite3 and database
 const sqlite3 = require('sqlite3').verbose()
-const db = new sqlite3.Database(".database/main_data.db")
+// When using actual DB == const db = new sqlite3.Database(".database/main_data.db")
+const db = new sqlite3.Database(".database/datasource.db")
 
 app.use(express.static(path.join(__dirname, "public")));
 
