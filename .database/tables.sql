@@ -23,3 +23,16 @@ CREATE TABLE Books_collections (
     description TEXT,
     order_index INTEGER UNIQUE NOT NULL
 )
+
+INSERT INTO Books_collections (name, description, order_index) VALUES (
+    "Pentateuch",
+    "The first five books of the Bible, traditionally attributed to Moses, forming the theological and historical foundation of Scripture. They narrate creation, humanity's fall, God's covenant with Israel, the Exodus from Egypt, and the giving of the Law, establishing the identity, mission, and worship of God's people.",
+    1
+)
+
+INSERT INTO Books (book_name, description, book_id, short_name) VALUES (
+    "Genesis",
+    "Genesis answers two big questions: “How did God's relationship with the world begin?” and “Where did the nation of Israel come from?”",
+    1,
+    "Gen"
+)
