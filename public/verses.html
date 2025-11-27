@@ -48,14 +48,14 @@
 
     <!-- Featured Verses Section -->
     <div class="min-w-[65%] max-w-max mx-auto m-4">
-      <div class="flex gap-6 justify-end ">
+      <div class="flex gap-6 justify-end">
         <div class="join">
-          <select name="" id="" class="select join-item">
-            <option disabled selected>Pick a book</option>
-            <option value="">Genesis</option>
-            <option value="">Exodus</option>
-          </select>
-          <button class="btn join-item">Select</button>
+          <input type="text" class="input join-item" placeholder="Book" list="books">
+          <datalist id="books">
+            <option value="Genesis"></option>
+            <option value="Exodus"></option>
+          </datalist>
+          <button class="btn join-tem">Search</button>
         </div>
       </div>
       <!-- Display 3 cards with verses -->
