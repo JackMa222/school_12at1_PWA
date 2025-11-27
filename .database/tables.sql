@@ -30,9 +30,10 @@ INSERT INTO Books_collections (name, description, order_index) VALUES (
     1
 )
 
-INSERT INTO Books (book_name, description, book_id, short_name) VALUES (
+INSERT INTO Books (book_name, description, book_id, short_name, book_collection_order_index) VALUES (
     "Genesis",
     "Genesis answers two big questions: “How did God's relationship with the world begin?” and “Where did the nation of Israel come from?”",
     1,
-    "Gen"
+    "Gen",
+    1
 )
