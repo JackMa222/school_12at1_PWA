@@ -1,0 +1,67 @@
+id,book_name,description,book_id,book_collection_order_index,short_name
+1,Genesis,Genesis answers two big questions: “How did God’s relationship with the world begin?” and “Where did the nation of Israel come from?”,1,1,Gen
+2,Exodus,"God saves Israel from slavery in Egypt, and then enters into a special relationship with them.",2,1,Exod
+3,Leviticus,God gives Israel instructions for how to worship Him.,3,1,Lev
+4,Numbers,"Israel fails to trust and obey God, and wanders in the wilderness for 40 years.",4,1,Num
+5,Deuteronomy,"Moses gives Israel instructions (in some ways, a recap of the laws in Exodus–Numbers) for how to love and obey God in the Promised Land.",5,1,Deut
+6,Joshua,"Joshua (Israel’s new leader) leads Israel to conquer the Promised land, then parcels out territories to the twelve tribes of Israel.",6,2,Josh
+7,Judges,"Israel enters a cycle of turning from God, falling captive to oppressive nations, calling out to God, and being rescued by leaders God sends their way (called “judges”).",7,2,Judg
+8,Ruth,"Two widows lose everything, and find hope in Israel—which leads to the birth of the future King David.",8,2,Ruth
+9,1 Samuel,"Israel demands a king, who turns out to be quite a disappointment.",9,2,1Sam
+10,2 Samuel,"David, a man after God’s own heart, becomes king of Israel.",10,2,2Sam
+11,1 Kings,"The kingdom of Israel has a time of peace and prosperity under King Solomon, but afterward splits, and the two lines of kings turn away from God.",11,2,1Kgs
+12,2 Kings,"Both kingdoms ignore God and his prophets, until they both fall captive to other world empires.",12,2,2Kgs
+13,1 Chronicles,"This is a brief history of Israel from Adam to David, culminating with David commissioning the temple of God in Jerusalem.",13,2,1Chr
+14,2 Chronicles,"David’s son Solomon builds the temple, but after centuries of rejecting God, the Babylonians take the southern Israelites captive and destroy the temple.",14,2,2Chr
+15,Ezra,"The Israelites rebuild the temple in Jerusalem, and a scribe named Ezra teaches the people to once again obey God’s laws.",15,2,Ezra
+16,Nehemiah,"The city of Jerusalem is in bad shape, so Nehemiah rebuilds the wall around the city.",16,2,Neh
+17,Esther,"Someone hatches a genocidal plot to bring about Israel’s extinction, and Esther must face the emperor to ask for help.",17,2,Esth
+18,Job,"Satan attacks a righteous man named Job, and Job and his friends argue about why terrible things are happening to him.",18,3,Job
+19,Psalms,A collection of 150 songs that Israel sang to God (and to each other)—kind of like a hymnal for the ancient Israelites.,19,3,Ps
+20,Proverbs,A collection of sayings written to help people make wise decisions that bring about justice.,20,3,Prov
+21,Ecclesiastes,A philosophical exploration of the meaning of life—with a surprisingly nihilistic tone for the Bible.,21,3,Eccl
+22,Song of Solomon,"A love song (or collection of love songs) celebrating love, desire, and marriage.",22,3,Song
+23,Isaiah,God sends the prophet Isaiah to warn Israel of future judgment—but also to tell them about a coming king and servant who will “bear the sins of many.”,23,4,Isa
+24,Jeremiah,"God sends a prophet to warn Israel about the coming Babylonian captivity, but the people don’t take the news very well.",24,4,Jer
+25,Lamentations,A collection of dirges lamenting the fall of Jerusalem after the Babylonian attacks.,25,4,Lam
+26,Ezekiel,"God chooses a man to speak for Him to Israel, to tell them the error of their ways and teach them justice: Ezekiel.",26,4,Ezek
+27,Daniel,"Daniel becomes a high-ranking wise man in the Babylonian and Persian empires, and has prophetic visions concerning Israel’s future.",27,4,Dan
+28,Hosea,"Hosea is told to marry a prostitute who leaves him, and he must bring her back: a picture of God’s relationship with Israel.",28,4,Hos
+29,Joel,"God sends a plague of locusts to Judge Israel, but his judgment on the surrounding nations is coming, too.",29,4,Joel
+30,Amos,A shepherd named Amos preaches against the injustice of the Northern Kingdom of Israel.,30,4,Amos
+31,Obadiah,Obadiah warns the neighboring nation of Edom that they will be judged for plundering Jerusalem.,31,4,Obad
+32,Jonah,"A disobedient prophet runs from God, is swallowed by a great fish, and then preaches God’s message to the city of Nineveh.",32,4,Jonah
+33,Micah,"Micah confronts the leaders of Israel and Judah regarding their injustice, and prophecies that one day the Lord himself will rule in perfect justice.",33,4,Mic
+34,Nahum,"Nahum foretells of God’s judgment on Nineveh, the capital of Assyria.",34,4,Nah
+35,Habakkuk,"Habakkuk pleads with God to stop the injustice and violence in Judah, but is surprised to find that God will use the even more violent Babylonians to do so.",35,4,Hab
+36,Zephaniah,"God warns that he will judge Israel and the surrounding nations, but also that he will restore them in peace and justice.",36,4,Zeph
+37,Haggai,"The people have abandoned the work of restoring God’s temple in Jerusalem, and so Haggai takes them to task.",37,4,Hag
+38,Zechariah,"The prophet Zechariah calls Israel to return to God, and records prophetic visions that show what’s happening behind the scenes.",38,4,Zech
+39,Malachi,"God has been faithful to Israel, but they continue to live disconnected from him—so God sends Malachi to call them out.",39,4,Mal
+40,Matthew,"This is an account of Jesus’ life, death, and resurrection, focusing on Jesus’ role as the true king of the Jews.",40,5,Matt
+41,Mark,This brief account of Jesus’ earthly ministry highlights Jesus’ authority and servanthood.,41,5,Mark
+42,Luke,"Luke writes the most thorough account of Jesus’ life, pulling together eyewitness testimonies to tell the full story of Jesus.",42,5,Luke
+43,John,John lists stories of signs and miracles with the hope that readers will believe in Jesus.,43,5,John
+44,Acts,"Jesus returns to the Father, the Holy Spirit comes to the church, and the gospel of Jesus spreads throughout the world.",44,5,Acts
+45,Romans,"Paul summarizes how the gospel of Jesus works in a letter to the churches at Rome, where he plans to visit.",45,6,Rom
+46,1 Corinthians,"Paul writes a disciplinary letter to a fractured church in Corinth, and answers some questions that they’ve had about how Christians should behave.",46,6,1Cor
+47,2 Corinthians,"Paul writes a letter of reconciliation to the church at Corinth, and clears up some concerns that they have.",47,6,2Cor
+48,Galatians,"Paul hears that the Galatian churches have been lead to think that salvation comes from the law of Moses, and writes a (rather heated) letter telling them where the false teachers have it wrong.",48,6,Gal
+49,Ephesians,"Paul writes to the church at Ephesus about how to walk in grace, peace, and love.",49,6,Eph
+50,Philippians,"An encouraging letter to the church of Philippi from Paul, telling them how to have joy in Christ.",50,6,Phil
+51,Colossians,"Paul writes the church at Colossae a letter about who they are in Christ, and how to walk in Christ.",51,6,Col
+52,1 Thessalonians,"Paul has heard a good report on the church at Thessalonica, and encourages them to “excel still more” in faith, hope, and love.",52,6,1Thess
+53,2 Thessalonians,Paul instructs the Thessalonians on how to stand firm until the coming of Jesus.,53,6,2Thess
+54,1 Timothy,Paul gives his protegé Timothy instruction on how to lead a church with sound teaching and a godly example.,54,6,1Tim
+55,2 Timothy,"Paul is nearing the end of his life, and encourages Timothy to continue preaching the word.",55,6,2Tim
+56,Titus,"Paul advises Titus on how to lead orderly, counter-cultural churches on the island of Crete.",56,6,Titus
+57,Philemon,"Paul strongly recommends that Philemon accept his runaway slave as a brother, not a slave.",57,6,Phlm
+58,Hebrews,"A letter encouraging Christians to cling to Christ despite persecution, because he is greater.",58,6,Heb
+59,James,A letter telling Christians to live in ways that demonstrate their faith in action.,59,6,Jas
+60,1 Peter,"Peter writes to Christians who are being persecuted, encouraging them to testify to the truth and live accordingly.",60,6,1Pet
+61,2 Peter,"Peter writes a letter reminding Christians about the truth of Jesus, and warning them that false teachers will come.",61,6,2Pet
+62,1 John,"John writes a letter to Christians about keeping Jesus’ commands, loving one another, and important things they should know.",62,6,1John
+63,2 John,"A very brief letter about walking in truth, love, and obedience.",63,6,2John
+64,3 John,An even shorter letter about Christian fellowship.,64,6,3John
+65,Jude,"A letter encouraging Christians to contend for the faith, even though ungodly persons have crept in unnoticed.",65,6,Jude
+66,Revelation,"John sees visions of things that have been, things that are, and things that are yet to come.",66,6,Rev
