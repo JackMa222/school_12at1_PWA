@@ -3,12 +3,14 @@ const path = require("path");
 const app = express();
 const fs = require("fs");
 const exportVersesToJSON = require("./util/verses");
+const exportBooksToJSON = require("./util/books")
 
 // Introduce sqlite3 and database
 const sqlite3 = require('sqlite3').verbose()
 const db = new sqlite3.Database(".database/main_data.db")
 
 exportVersesToJSON(db).catch(error => console.error(error));
+exportBooksToJSON(db).catch(error => console.error(error));
 
 app.use(express.static(path.join(__dirname, "public")));
 
