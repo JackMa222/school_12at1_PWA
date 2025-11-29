@@ -1,11 +1,14 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const fs = require("fs");
+const exportVersesToJSON = require("./util/verses");
 
 // Introduce sqlite3 and database
 const sqlite3 = require('sqlite3').verbose()
-// When using actual DB == const db = new sqlite3.Database(".database/main_data.db")
-const db = new sqlite3.Database(".database/datasource.db")
+const db = new sqlite3.Database(".database/main_data.db")
+
+exportVersesToJSON(db).catch(error => console.error(error));
 
 app.use(express.static(path.join(__dirname, "public")));
 
