@@ -32,7 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ? allVerses.filter((v) => {
             const name = (v.book_name || "").toLowerCase();
             const shortName = (v.short_name || "").toLowerCase();
-            return name === query || shortName === query;
+            const collection = (v.collection_name || "").toLowerCase();
+            return name.includes(query) || shortName.includes(query) || collection.includes(query)
         })
         : allVerses;
 
