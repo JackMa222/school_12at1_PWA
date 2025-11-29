@@ -3,7 +3,7 @@ CREATE TABLE Verses (
     book_id INTEGER,
     chapter_number INTEGER,
     verse_number INTEGER,
-    verse_text INTEGER,
+    verse_text TEXT,
     FOREIGN KEY (book_id) REFERENCES Books(book_id)
 )
 
@@ -36,4 +36,25 @@ INSERT INTO Books (book_name, description, book_id, short_name, book_collection_
     1,
     "Gen",
     1
+)
+
+INSERT INTO Verses (book_id, chapter_number, verse_number, verse_text) VALUES (
+    1,
+    1,
+    1,
+    "In the beginning, God created the heavens and the earth."
+)
+
+INSERT INTO Verses (book_id, chapter_number, verse_number, verse_text) VALUES (
+    2,
+    14,
+    14,
+    "The Lord will fight for you, and you have only to be silent."
+)
+
+INSERT INTO Verses (book_id, chapter_number, verse_number, verse_text) VALUES (
+    3,
+    19,
+    18,
+    "You shall not take vengeance or bear a grudge against the sons of your own people, but you shall love your neighbor as yourself: I am the Lord."
 )
