@@ -38,6 +38,22 @@ INSERT INTO Books (book_name, description, book_id, short_name, book_collection_
     1
 )
 
+INSERT INTO Books (book_name, description, book_id, short_name, book_collection_order_index) VALUES (
+    "Exodus",
+    "God saves Israel from slavery in Egypt, and then enters into a special relationship with them.",
+    2,
+    "Exod",
+    1
+)
+
+INSERT INTO Books (book_name, description, book_id, short_name, book_collection_order_index) VALUES (
+    "Leviticus",
+    "God gives Israel instructions for how to worship Him.",
+    3,
+    "Lev",
+    1
+)
+
 INSERT INTO Verses (book_id, chapter_number, verse_number, verse_text) VALUES (
     1,
     1,

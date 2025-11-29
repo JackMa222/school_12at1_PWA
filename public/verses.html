@@ -50,56 +50,16 @@
     <div class="min-w-[65%] max-w-max mx-auto m-4">
       <div class="flex gap-6 justify-end">
         <div class="join">
-          <input type="text" class="input join-item" placeholder="Book" list="books">
+          <input id="bookInput" type="text" class="input join-item" placeholder="Book" list="books">
           <datalist id="books">
-            <option value="Genesis"></option>
-            <option value="Exodus"></option>
+            <!-- Datlist to be filled by JS -->>
           </datalist>
           <button class="btn join-tem">Search</button>
         </div>
       </div>
-      <!-- Display 3 cards with verses -->
-      <div class="flex justify-between m-4 flex-wrap gap-6">
-        <!-- CARD -->
-        <div class="card card-border bg-base-200 w-96">
-          <div class="card-body">
-            <div class="flex flex-row justify-between">
-              <h2 class="card-title">John 3:16</h2>
-              <div class="badge whitespace-nowrap badge-primary">Poetic and Wisdom Literature</div>
-            </div>
-            <p>“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish
-              but have eternal life.</p>
-            <div class="badge whitespace-nowrap badge-secondary ml-auto">Creation</div>
-          </div>
-        </div>
-
-        <!-- CARD -->
-        <div class="card card-border bg-base-200 w-96">
-          <div class="card-body">
-            <div class="flex flex-row justify-between">
-              <h2 class="card-title">John 3:16</h2>
-              <div class="badge whitespace-nowrap badge-primary">Gospels & Acts</div>
-            </div>
-            <p>“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish
-              but have eternal life.</p>
-            <div class="badge whitespace-nowrap badge-secondary ml-auto">Creation</div>
-          </div>
-        </div>
-
-        <!-- CARD -->
-        <div class="card card-border bg-base-200 w-96">
-          <div class="card-body">
-            <div class="flex flex-row justify-between">
-              <h2 class="card-title">John 3:16</h2>
-              <div class="badge whitespace-nowrap badge-primary">Gospels & Acts</div>
-            </div>
-            <p>“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish
-              but have eternal life. “For God so loved the world, that he gave his only Son, that whoever believes in
-              him should not perish
-              but have eternal life.</p>
-            <div class="badge whitespace-nowrap badge-secondary ml-auto">Creation</div>
-          </div>
-        </div>
+      <!-- Display cards with verses -->
+      <div id="verseCards" class="flex justify-between m-4 flex-wrap gap-6">
+        <!-- Cards will be inserted by JS -->
       </div>
     </div>
   </main>
@@ -119,6 +79,7 @@
         amet assumenda!</p>
     </aside>
   </footer>
+  <script src="/js/verses.js"></script>
 </body>
 
 </html>
