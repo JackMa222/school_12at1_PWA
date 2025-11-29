@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const bookInput = document.getElementById("bookInput");
 
     searchBtn.addEventListener("click", () => {
-        const query = bookInput.ariaValueMax.trim.toLowerCase();
+        const query = bookInput.value.trim().toLowerCase();
 
         const filtered = query
         ? allVerses.filter((v) => {
             const name = (v.book_name || "").toLowerCase();
-            const shortName = (v.shortName || "").toLowerCase();
+            const shortName = (v.short_name || "").toLowerCase();
             return name === query || shortName === query;
         })
         : allVerses;
@@ -54,7 +54,7 @@ function populateBookDatalist(verses) {
 // Render the cards into verseCards div
 function renderVerseCards(verses) {
     const container = document.getElementById("verseCards");
-    container.innnerHTML = "";
+    container.innerHTML = "";
 
     if (!verses.length) {
         container.innerHTML = "<p>No verses found.</p>";
