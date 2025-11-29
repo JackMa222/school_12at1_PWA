@@ -6,6 +6,6 @@ The commands are as following:
 ``.mode csv
 .mode headers``
 
-1. `.import ".database/csv/book_collections.csv" Book_collections`
+1. `.import ".database/csv/book_collections.csv" Books_collections`
 2. `.import ".database/csv/books.csv" Books`
 3. `.import ".database/csv/verses.csv" Verses`
