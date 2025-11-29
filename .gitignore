@@ -138,3 +138,5 @@ dist
 #Node Core
 node_modules/
 
+# Extra
+public/data/
