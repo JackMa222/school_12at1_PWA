@@ -1,76 +1,75 @@
-let allBooks = [];
+let allCollections = [];
 // Pagination variables
-let filteredBooks = [];
+let filteredCollections = [];
 const PAGE_SIZE = 15;
 let currentPage = 1;
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Fetch books from server saved code!
-    fetch("/data/books.json")
+    // Fetch collections from server saved code!
+    fetch("/data/collections.json")
         .then((res) => res.json())
         .then((data) => {
-            allBooks = data;
-            filteredBooks = data;
+            allCollections = data;
+            filteredCollections = data;
 
-            populateBookDatalist(data);
+            populateCollectionDatalist(data);
             renderPage();
         })
         .catch((error) => {
-            console.error("Error loading data from books.json", error);
-            const container = document.getElementById("bookCards");
-            container.innerHTML="<p>Failed to load books.</p>"
+            console.error("Error loading data from collections.json", error);
+            const container = document.getElementById("collectionCards");
+            container.innerHTML="<p>Failed to load collections.</p>"
         });
 
     // Set up search button to function correctly
-    const searchBtn = document.getElementById("bookSearchBtn");
-    const bookInput = document.getElementById("bookInput");
+    const searchBtn = document.getElementById("collectionSearchBtn");
+    const collectionInput = document.getElementById("collectionInput");
 
     searchBtn.addEventListener("click", () => {
-        const query = bookInput.value.trim().toLowerCase();
+        const query = collectionInput.value.trim().toLowerCase();
 
-        filteredBooks = query
-        ? allBooks.filter((b) => {
-            const name = (b.book_name || "").toLowerCase();
-            const shortName = (b.short_name || "").toLowerCase();
-            const collection = (b.collection_name || "").toLowerCase();
+        filteredCollections = query
+        ? allCollections.filter((c) => {
+            const name = (c.collection_name || "").toLowerCase();
+            const description = (c.collection_description || "").toLowerCase();
             return (
-                name.includes(query) || shortName.includes(query) || collection.includes(query)
+                name.includes(query) || description.includes(query)
             );
         })
-        : allBooks;
+        : allCollections;
 
         currentPage = 1;
         renderPage();
     });
 });
 
-// Fill the datalist with unique book names
-function populateBookDatalist(books) {
-    const datalist = document.getElementById("books");
+// Fill the datalist with unique collection names
+function populateCollectionDatalist(collections) {
+    const datalist = document.getElementById("collections");
     datalist.innerHTML = "";
 
-    const uniqueBooks = [
-        ...new Set(books.map((b) => b.book_name).filter(Boolean)),
+    const uniqueCollections = [
+        ...new Set(collections.map((c) => c.collection_name).filter(Boolean)),
     ].sort();
 
-    uniqueBooks.forEach((bookName) => {
+    uniqueCollections.forEach((name) => {
         const opt = document.createElement("option");
-        opt.value = bookName;
+        opt.value = name;
         datalist.appendChild(opt);
     })
 }
 
-// Render the cards into verseCards div
-function renderBookCards(books) {
-    const container = document.getElementById("bookCards");
+// Render the cards into collectionCards div
+function renderCollectionCards(collections) {
+    const container = document.getElementById("collectionCards");
     container.innerHTML = "";
 
-    if (!books.length) {
-        container.innerHTML = "<p>No books found.</p>";
+    if (!collections.length) {
+        container.innerHTML = "<p>No collections found.</p>";
         return;
     }
 
-    books.forEach((b) => {
+    collections.forEach((c) => {
         const card = document.createElement("div");
         card.className = "card card-border bg-base-200 w-96";
         
@@ -82,18 +81,19 @@ function renderBookCards(books) {
 
         const title = document.createElement("h2");
         title.className = "card-title";
-        title.textContent = `${b.book_name}`;
+        title.textContent = `${c.collection_name}`;
 
-        const collectionBadge = document.createElement("div");
-        collectionBadge.className = "badge whitespace-nowrap badge-primary";
-        collectionBadge.textContent = b.collection_name || "Unknown collection";
+        const badge = document.createElement("div");
+        badge.className = "badge whitespace-nowrap badge-primary";
+        const count = c.book_count ?? 0;
+        badge.textContent = count === 1 ? "1 book" : `${count} books`;
 
         headerRow.appendChild(title);
-        headerRow.appendChild(collectionBadge);
+        headerRow.appendChild(badge);
 
         // Text of verse
         const p = document.createElement("p");
-        p.textContent = b.book_description;
+        p.textContent = c.collection_description;
 
         //const badge = document.createElement("div");
         //badge.className = "badge whitespace-nowrap badge-secondary ml-auto";
@@ -111,15 +111,15 @@ function renderBookCards(books) {
 }
 
 function renderPage() {
-    const total = filteredBooks.length;
+    const total = filteredCollections.length;
     const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
     if (currentPage > totalPages) currentPage = totalPages;
 
     const startIndex = (currentPage - 1) * PAGE_SIZE;
-    const pageItems = filteredBooks.slice(startIndex, startIndex + PAGE_SIZE);
+    const pageItems = filteredCollections.slice(startIndex, startIndex + PAGE_SIZE);
 
-    renderBookCards(pageItems);
+    renderCollectionCards(pageItems);
     renderPaginationControls(totalPages);
 }
 
@@ -127,7 +127,7 @@ function renderPaginationControls(totalPages) {
     const container = document.getElementById("paginationControls");
     container.innerHTML = "";
 
-    if (!filteredBooks.length) return;
+    if (!filteredCollections.length) return;
 
     const prevBtn = document.createElement("button");
     prevBtn.className = "btn btn-sm";

@@ -50,15 +50,15 @@
     <div class="min-w-[65%] max-w-max mx-auto m-4">
       <div class="flex gap-6 justify-end">
         <div class="join">
-          <input id="bookInput" type="text" class="input join-item" placeholder="Book or Collection" list="books">
-          <datalist id="books">
+          <input id="collectionInput" type="text" class="input join-item" placeholder="Book or Collection" list="collections">
+          <datalist id="collections">
             <!-- Datlist to be filled by JS -->>
           </datalist>
-          <button id="bookSearchBtn" class="btn join-tem">Search</button>
+          <button id="collectionSearchBtn" class="btn join-tem">Search</button>
         </div>
       </div>
       <!-- Display cards with books -->
-      <div id="bookCards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center m-4 max-w-6xl mx-auto">
+      <div id="collectionCards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center m-4 max-w-6xl mx-auto">
         <!-- Cards will be inserted by JS -->
       </div>
       <div class="flex justify-center gap-4 my-4" id="paginationControls">
@@ -82,7 +82,7 @@
         amet assumenda!</p>
     </aside>
   </footer>
-  <script src="/js/books.js"></script>
+  <script src="/js/collections.js"></script>
 </body>
 
 </html>
