@@ -99,15 +99,15 @@ function renderVerseCards(verses) {
         const p = document.createElement("p");
         p.textContent = v.verse_text;
 
-        const badge = document.createElement("div");
-        badge.className = "badge whitespace-nowrap badge-secondary ml-auto";
-        badge.textContent = "THEME";
+        //const badge = document.createElement("div");
+        //badge.className = "badge whitespace-nowrap badge-secondary ml-auto";
+        //badge.textContent = "THEME";
 
         // Assemble all the parts together
 
         body.appendChild(headerRow);
         body.appendChild(p);
-        body.appendChild(badge);
+        //body.appendChild(badge);
 
         card.appendChild(body);
         container.appendChild(card);
