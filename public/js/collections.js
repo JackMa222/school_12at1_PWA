@@ -41,6 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
         currentPage = 1;
         renderPage();
     });
+
+    collectionInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            searchBtn.click();
+        }
+    });
 });
 
 // Fill the datalist with unique collection names
