@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const name = (v.book_name || "").toLowerCase();
             const shortName = (v.short_name || "").toLowerCase();
             const collection = (v.collection_name || "").toLowerCase();
-            return name.includes(query) || shortName.includes(query) || collection.includes(query)
+            const verse = (v.verse_text || "").toLowerCase();
+            return name.includes(query) || shortName.includes(query) || collection.includes(query) || verse.includes(query)
         })
         : allVerses;
 
