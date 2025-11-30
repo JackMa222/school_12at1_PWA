@@ -84,7 +84,7 @@ function renderCollectionCards(collections) {
         title.textContent = `${c.collection_name}`;
 
         const badge = document.createElement("div");
-        badge.className = "badge whitespace-nowrap badge-primary";
+        badge.className = "badge whitespace-nowrap badge-accent";
         const count = c.book_count ?? 0;
         badge.textContent = count === 1 ? "1 book" : `${count} books`;
 
