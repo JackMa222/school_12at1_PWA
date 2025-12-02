@@ -45,28 +45,42 @@
       </div>
     </div>
 
-
-    <!-- Featured Books Section -->
-    <div class="min-w-[65%] max-w-max mx-auto m-4">
-      <div class="flex gap-6 justify-end">
-        <div class="join">
-          <input id="collectionInput" type="text" class="input join-item" placeholder="Collection" list="collections">
-          <datalist id="collections">
-            <!-- Datlist to be filled by JS -->
-          </datalist>
-          <button id="collectionSearchBtn" class="btn join-tem">Search</button>
-        </div>
+    <div class="w-full max-w-7xl mx-auto px-4 m-4">
+      <div class="flex gap-6">
+        <h1 class="text-4xl m-4">Data Sources</h1>
       </div>
-      <!-- Display cards with books -->
-      <div id="collectionCards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center m-4 max-w-6xl mx-auto">
-        <!-- Cards will be inserted by JS -->
-      </div>
-      <div class="flex justify-center gap-4 my-4" id="paginationControls">
-        <!-- Pagination buttons will be inserted by JS here ! -->
+      <div class="join join-vertical bg-base-100 w-full">
+        <details class="collapse bg-base-100 border border-base-300 join-item" name="accordion">
+          <summary class="collapse-title font-semibold">Bible Verse Content</summary>
+          <div class="collapse-content text-sm">
+            <p>Scripture quotations are from The ESV® Bible (The Holy Bible, English Standard Version®), © 2001 by
+              Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved. “ESV,”
+              the “English Standard Version,” the “Global Study Bible,” and the ESV logo are registered trademarks of
+              Crossway, registered in the United States of America. Use of any of these trademarks requires the prior
+              permission of Crossway. The Holy Bible, English Standard Version (ESV) is adapted from the Revised
+              Standard Version of the Bible, copyright Division of Christian Education of the National Council of the
+              Churches of Christ in the U.S.A. All rights reserved.</p>
+          </div>
+        </details>
+        <details class="collapse bg-base-100 border border-base-300 join-item" name="accordion">
+          <summary class="collapse-title font-semibold">Book Summaries</summary>
+          <div class="collapse-content text-sm">
+            <p>Summaries of the individual books of the Bible have been adapted from <a
+                href="https://overviewbible.com/books-of-the-bible/" class="link">OverviewBible</a></p>
+          </div>
+        </details>
+        <details class="collapse bg-base-100 border border-base-300 join-item" name="accordion">
+          <summary class="collapse-title font-semibold">Other Data</summary>
+          <div class="collapse-content text-sm">
+            <p>The data for the books of the Bible was created using materials adapted
+              from user BradyStephenson's <a href="https://github.com/BradyStephenson/bible-data" class="link">bible-data repository
+                on
+                Github.</a></p>
+          </div>
+        </details>
       </div>
     </div>
   </main>
-
   <!-- Footer section with links to other pages-->
   <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
     <nav class="grid grid-flow-col gap-4">
@@ -82,7 +96,6 @@
         amet assumenda!</p>
     </aside>
   </footer>
-  <script src="/js/collections.js"></script>
 </body>
 
 </html>
