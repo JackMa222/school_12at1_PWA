@@ -1,6 +1,6 @@
 ## How the the full data was imported
 
-Given that multiple of the tables had greater than 60 entries, it would be non-sensical to continue importing by individual SQL commands like those found in tables.sql that have been used for testing. Thus another method invoking the SQLITE3 CLI has been used.
+Given that multiple of the tables had greater than 60 entries, it would be nonsensical  to continue importing by individual SQL commands like those found in tables.sql that have been used for testing. Thus another method invoking the SQLITE3 CLI has been used.
 
 The commands are as following:
 ``.mode csv``
