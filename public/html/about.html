@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+  <link rel="stylesheet" href="./css/output.css">
+  <title>Bible Verser</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <nav class="navbar bg-base-200 shadow-sm">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl" href="/">Bible Verser</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1 items-center">
+        <li><a href="/verses">Verses</a></li>
+        <li><a href="/books">Books</a></li>
+        <li><a href="/collections">Book Collections</a></li>
+        <li><a href="/about" class="btn">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main class="flex-grow">
+    <!-- Hero Display -->
+    <div class="hero bg-base-200 min-h-80">
+      <div class="hero-content flex-col lg:flex-row">
+        <!-- Hero Image Display -->
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO9uXzA8UcP8IN1IbcVGYIsWvJRxt7QW4Jw0XP_mxG1LNMate5rZ_wBwGE5Ox-FFtuADBW-jYY5idY0QQ9B4Kuc7WbWQUilX-GXqznE6kP&s=10"
+          class="max-w-sm rounded-lg shadow-2x1" />
+        <!-- Hero Text Content -->
+        <div class="p-8">
+          <h1 class="text-5xl font-bold">MAIN TEXT!</h1>
+          <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore inventore debitis dolorem
+            voluptates animi in reiciendis, quisquam vel sunt ad accusantium enim iste porro possimus fugit aliquam
+            ullam voluptate ea!</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Featured Books Section -->
+    <div class="min-w-[65%] max-w-max mx-auto m-4">
+      <div class="flex gap-6 justify-end">
+        <div class="join">
+          <input id="collectionInput" type="text" class="input join-item" placeholder="Collection" list="collections">
+          <datalist id="collections">
+            <!-- Datlist to be filled by JS -->
+          </datalist>
+          <button id="collectionSearchBtn" class="btn join-tem">Search</button>
+        </div>
+      </div>
+      <!-- Display cards with books -->
+      <div id="collectionCards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center m-4 max-w-6xl mx-auto">
+        <!-- Cards will be inserted by JS -->
+      </div>
+      <div class="flex justify-center gap-4 my-4" id="paginationControls">
+        <!-- Pagination buttons will be inserted by JS here ! -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer section with links to other pages-->
+  <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+    <nav class="grid grid-flow-col gap-4">
+      <a href="/" class="link link-hover">Home</a>
+      <a href="/verses" class="link link-hover">Verses</a>
+      <a href="/books" class="link link-hover">Books</a>
+      <a href="/collections" class="link link-hover">Book Collections</a>
+      <a href="/about" class="link link-hover">About</a>
+    </nav>
+    <aside>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut magni sequi perferendis nulla fugit,
+        excepturi possimus! Ab porro fuga, natus doloribus harum vel temporibus, reprehenderit cupiditate asperiores
+        amet assumenda!</p>
+    </aside>
+  </footer>
+  <script src="/js/collections.js"></script>
+</body>
+
+</html>
