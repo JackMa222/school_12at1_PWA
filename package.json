@@ -1,7 +1,7 @@
 {
-  "name": "programming_for_the_web_task_source",
+  "name": "bible_verser_pwa",
   "version": "1.0.0",
-  "description": "A demo Node.JS Progressive Web Application with a SQLite backend.",
+  "description": "A Bible Study PWA",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
