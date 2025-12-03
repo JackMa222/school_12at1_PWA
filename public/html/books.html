@@ -15,16 +15,16 @@
 
 <body class="min-h-screen flex flex-col">
 
-  <nav class="navbar bg-base-200 shadow-sm">
+  <nav class="navbar bg-base-200 shadow-sm" aria-label="Main/top header navbar">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl" href="/">Bible Verser</a>
+      <a class="accessible_link btn btn-ghost text-xl" href="/">Bible Verser</a>
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1 items-center">
-        <li><a href="/verses">Verses</a></li>
-        <li><a href="/books">Books</a></li>
-        <li><a href="/collections">Book Collections</a></li>
-        <li><a href="/about" class="btn">About</a></li>
+        <li><a class="accessible_link" href="/verses">Verses</a></li>
+        <li><a class="accessible_link" href="/books">Books</a></li>
+        <li><a class="accessible_link" href="/collections">Book Collections</a></li>
+        <li><a class="accessible_link" href="/about" class="btn">About</a></li>
       </ul>
     </div>
   </nav>
@@ -74,19 +74,19 @@
 
   <!-- Footer section with links to other pages-->
   <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
-    <nav class="grid grid-flow-col gap-4">
-      <a href="/" class="link link-hover">Home</a>
-      <a href="/verses" class="link link-hover">Verses</a>
-      <a href="/books" class="link link-hover">Books</a>
-      <a href="/collections" class="link link-hover">Book Collections</a>
-      <a href="/about" class="link link-hover">About</a>
+    <nav class="grid grid-flow-col gap-4" aria-label="Footer/secondary navbar">
+      <a class="accessible_link" href="/" class="link link-hover">Home</a>
+      <a class="accessible_link" href="/verses" class="link link-hover">Verses</a>
+      <a class="accessible_link" href="/books" class="link link-hover">Books</a>
+      <a class="accessible_link" href="/collections" class="link link-hover">Book Collections</a>
+      <a class="accessible_link" href="/about" class="link link-hover">About</a>
     </nav>
-    <aside>
-      <p>Built as part Progressive Web App (PWA) assessment task from the <i>Programming for the Web</i> unit,
+    <div>
+      <p>Built as part of the Progressive Web App (PWA) assessment task from the <i>Programming for the Web</i> unit,
         showcasing
-        practical full-stack development, user-experience design, and responsive interface implementation using mdoer
+        practical full-stack development, user-experience design, and responsive interface implementation using modern
         web technologies to create a Bible resource site.</p>
-    </aside>
+    </div>
   </footer>
   <script src="/js/books.js"></script>
 </body>
