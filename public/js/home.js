@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const randomVerses = pickRandom(verses, 3);
             const randomBooks = pickRandom(books, 3);
             const randomCollections = pickRandom(collections, 3);
-
+            
+            // Render page using previously created render functions
             renderFeaturedVerses(randomVerses);
             renderFeaturedBooks(randomBooks);
             renderFeaturedCollections(randomCollections);
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 });
 
+// Pick random object from array, and account for errors if there is less items then requested
 function pickRandom(arr, n) {
     const copy = [...arr];
     for (let i = copy.length - 1; i > 0; i--) {

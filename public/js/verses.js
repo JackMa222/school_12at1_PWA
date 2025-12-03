@@ -114,7 +114,7 @@ function renderVerseCards(verses) {
         container.appendChild(card);
     });
 }
-
+// Render page using previously created render functions
 function renderPage() {
     const total = filteredVerses.length;
     const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
@@ -127,7 +127,7 @@ function renderPage() {
     renderVerseCards(pageItems);
     renderPaginationControls(totalPages);
 }
-
+// Render pagination controls at bottom of container
 function renderPaginationControls(totalPages) {
     const container = document.getElementById("paginationControls");
     container.innerHTML = "";

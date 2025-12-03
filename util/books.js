@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
+// Export all books (joined with their collections) from SQLite into a JSON file for the front end
 function exportBooksToJSON(db) {
     return new Promise((resolve, reject) => {
         const sql = `
@@ -30,10 +31,12 @@ function exportBooksToJSON(db) {
         const outputDirectory = path.join(__dirname, "..", "public", "data");
         const outputFile = path.join(outputDirectory, "books.json");
 
+        // Ensure directory exists
         if (!fs.existsSync(outputDirectory)) {
             fs.mkdirSync(outputDirectory, { recursive: true });
         }
 
+        // Write JSON file
         fs.writeFile(outputFile, JSON.stringify(rows, null, 2), (error) => {
             if (error) return reject (error);
 
@@ -44,4 +47,5 @@ function exportBooksToJSON(db) {
     })
 }
 
+// Export function
 module.exports = exportBooksToJSON;

@@ -4,6 +4,7 @@ let filteredBooks = [];
 const PAGE_SIZE = 15;
 let currentPage = 1;
 
+// Main initialisation: load book data, set up search handlers and prepare UI
 document.addEventListener("DOMContentLoaded", () => {
     // Fetch books from server saved code!
     fetch("/data/books.json")
@@ -27,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     searchBtn.addEventListener("click", () => {
         const query = bookInput.value.trim().toLowerCase();
-
+        // Filter books based on user's search query
         filteredBooks = query
         ? allBooks.filter((b) => {
             const name = (b.book_name || "").toLowerCase();
@@ -116,6 +117,7 @@ function renderBookCards(books) {
     });
 }
 
+// Render page using previously created render functions
 function renderPage() {
     const total = filteredBooks.length;
     const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
@@ -129,6 +131,7 @@ function renderPage() {
     renderPaginationControls(totalPages);
 }
 
+// Render pagination controls at bottom of container
 function renderPaginationControls(totalPages) {
     const container = document.getElementById("paginationControls");
     container.innerHTML = "";
